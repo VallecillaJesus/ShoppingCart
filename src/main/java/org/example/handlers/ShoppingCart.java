@@ -18,7 +18,7 @@ public class ShoppingCart implements RequestHandler<Bill, Object> {
 
     @Override
     public Object handleRequest(Bill input, Context context) {
-        String STOCK_VERIFIER = "stock_verifier";
+        String STOCK_VERIFIER = "jvallecilla-stock-verifier";
         System.out.println(input.toString());
 
         for(Product product : input.getProducts()){

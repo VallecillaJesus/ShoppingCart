@@ -20,5 +20,5 @@ Resources:
         - AWSXrayWriteOnlyAccess
         - AWSLambdaVPCAccessExecutionRole
         - LambdaInvokePolicy:
-            FunctionName: jvallecilla-stock-verifier
+            FunctionName: "jvallecilla-stock-verifier"
       Tracing: Active
