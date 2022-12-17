@@ -11,12 +11,10 @@ public class RequestManager {
         String inputJSON = new Gson().toJson(payload);
         SdkBytes convertedPayload = SdkBytes.fromUtf8String(inputJSON);
 
-        InvokeRequest invokeRequest = InvokeRequest.builder()
+        return InvokeRequest.builder()
                 .functionName(functionName)
                 .invocationType(InvocationType.EVENT)
                 .payload(convertedPayload)
                 .build();
-
-        return invokeRequest;
     }
 }

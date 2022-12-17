@@ -1,4 +1,4 @@
-package org.example.handlers;
+package org.example.utils;
 
 import software.amazon.awssdk.http.urlconnection.UrlConnectionHttpClient;
 import software.amazon.awssdk.regions.Region;

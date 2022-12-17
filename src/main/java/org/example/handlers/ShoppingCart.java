@@ -4,9 +4,9 @@ import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import org.example.models.Bill;
 import org.example.models.Product;
+import org.example.utils.LambdaClientFactory;
 import org.example.utils.RequestManager;
 import software.amazon.awssdk.services.lambda.LambdaClient;
-import software.amazon.awssdk.services.lambda.model.InvokeRequest;
 
 public class ShoppingCart implements RequestHandler<Bill, Object> {
 
